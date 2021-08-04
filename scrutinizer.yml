@@ -1,0 +1,11 @@
+build:
+  nodes:
+    some-node:
+      dependencies:
+        before:
+            - command: 'wget http://some/thing.tar.gz -O thing.tar.gz && tar -xzf thing.tar.gz'
+              not_if: 'test -e thing'
+
+    cache:
+      directories:
+        - 'thing'
